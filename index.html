@@ -5,33 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="container">
-      <h1>Weather App</h1>
+      <h1><span>Weather</span> App</h1>
       <form id="get-location">
         <label for="location">Enter a location for weather information</label>
         <input type="text" name="location" id="location" class="form-control"/>
       </form>
       <div class="weather">
-        <img class="weather__img" src="https://via.placeholder.com/400x300" alt="" width="400" height="400"></img>
+        <div class="weather__img__wrapper">
+          <img class="weather__img" src="" alt="" width="400" height="400"></img>
+        </div>
         <div class="weather__icon">
           <img src="" alt="">          
         </div>
-        <div class="weather__details">
-          <p class="weather__city">London</p>
-          <p class="weather__condition">Cloudy</p>
-          <div class="weather__temperature">
-            <span>11.6</span>
-            <span>&deg;C</span>
-          </div>
+        <div class="weather__details">          
         </div>
       </div>
     </main>
